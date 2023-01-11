@@ -19,7 +19,10 @@
   "author": "lucksoft",
   "license": "ISC",
   "description": "cross-platform android device file management tool, based on libmtp. Support `MacOs`, `Windows`, `linux` platforms.",
-  "homepage": "https://github.com/tidepool-org/node-mtp#readme",
+  "homepage": "https://github.com/lucksoft-yungui/luck-node-mtp",
+  "bugs": {
+    "url": "https://github.com/lucksoft-yungui/luck-node-mtp/issues"
+  },
   "keywords": [
     "mtp",
     "node",
