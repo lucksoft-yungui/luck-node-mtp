@@ -477,6 +477,16 @@ Need to install `libmtp-dev`:
 sudo apt-get install libmtp-dev
 ```
 
+
+# Test
+
+You can run the following command to test the files under the `test` file:
+
+```
+// test test/test_connect.js
+npm run test connect
+```
+
 # Known issues
 
 - Under Windows, the storage name obtained by the getCurrentDeviceStorageInfo method contains Chinese characters and may be garbled.

@@ -452,6 +452,15 @@ brew install libmtp
 sudo apt-get install libmtp-dev
 ```
 
+# 测试
+
+可以运行如下命令测试`test`文件下的文件：
+
+```
+// test test/test_connect.js
+npm run test connect
+```
+
 # 已知问题
 
 - Windows下，getCurrentDeviceStorageInfo方法获取的存储名称包含中文可能会乱码.
