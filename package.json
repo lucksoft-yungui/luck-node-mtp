@@ -1,0 +1,32 @@
+{
+  "main": "main.js",
+  "dependencies": {
+    "node-addon-api": "^1.1.0",
+    "node-gyp-build": "^4.6.0",
+    "shelljs": "^0.8.5"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=production node test/test.js",
+    "build:dev": "node-gyp rebuild --debug",
+    "build": "node-gyp build",
+    "clean": "node-gyp clean",
+    "prebuild": "prebuildify --napi --strip && node install/after.js",
+    "install": "node-gyp-build"
+  },
+  "gypfile": true,
+  "name": "luck-node-mtp",
+  "version": "1.0.0",
+  "author": "lucksoft",
+  "license": "ISC",
+  "description": "cross-platform android device file management tool, based on libmtp. Support `MacOs`, `Windows`, `linux` platforms.",
+  "homepage": "https://github.com/tidepool-org/node-mtp#readme",
+  "keywords": [
+    "mtp",
+    "node",
+    "android",
+    "file management"
+  ],
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
