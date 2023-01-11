@@ -428,7 +428,7 @@ At the same time, I also look forward to your friends to PR the `prebuild` files
 
 - Connect your mobile device to the system
 - List all `USB` devices via `Zadig` menu
-- Then select the `MTP` device to replace the driver- 然后选择`MTP`设备更换驱动
+- Then select the `MTP` device to replace the driver - Then select the MTP device to replace the driver
   
   As shown in the picture:
 
