@@ -421,7 +421,7 @@ The current version has prebuild the binary files of `darwin-x64` and `win32-x64
 
 Users of other OS need to build their own development environment to recompile. For details, please refer to the [Development Environment](#development-environment) chapter.
 
-At the same time, I also look forward to your friends to PR the `prebuild` files of other systems that you have precompiled into this project.
+At the same time, I also look forward to you can PR the `prebuild` files of other systems that you have precompiled into this project.
 
 > Note: The Windows platform needs to install the `WinUSB`, `libusb-win32` or `libusbK` driver to work properly, it is recommended to use `Zadig` to
 > Manage the drivers of each device. The way to manage the drivers through `Zadig` is as follows:
