@@ -1,6 +1,6 @@
 # luck-node-mtp
 
-`nodejs` cross-platform android device file management tool, based on [libmtp](https://github.com/libmtp/libmtp). Support `MacOs`, `Windows`, `linux` platforms.
+`nodejs` cross-platform android device file management tool, based on [libmtp](https://github.com/libmtp/libmtp). Support `MacOs`, `Windows`, `Linux` platforms.
 
 English | [简体中文](./README-zh_CN.md) 
 

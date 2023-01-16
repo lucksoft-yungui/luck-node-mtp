@@ -1,6 +1,6 @@
 # luck-node-mtp
 
-`nodejs`跨平台安卓设备文件管理工具，基于[libmtp](https://github.com/libmtp/libmtp)。支持`MacOs`、`Windows`、`linux`平台。
+`nodejs`跨平台安卓设备文件管理工具，基于[libmtp](https://github.com/libmtp/libmtp)。支持`MacOs`、`Windows`、`Linux`平台。
 
 [English](./README.md) | 简体中文
 
