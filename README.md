@@ -10,7 +10,6 @@ npm install luck-node-mtp
 
 ## Simple example
 
-simple use dmeo:
 ```javascript
 const mtp = require('luck-node-mtp');
 
