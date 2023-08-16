@@ -424,7 +424,7 @@ Napi::Boolean download(const Napi::CallbackInfo &info)
  *
  * @param info napi callback info
                info[0] [string] the local file path to be upload
-               info[1] [string] the device folder path where to uplaod
+               info[1] [string] the device folder path where to upload. May be an empty string if uploading to the root of the storage.
                info[2] [function] the progress callback function
                @see progress()
  * @return true if the operate was successful
@@ -468,7 +468,8 @@ Napi::Boolean upload(const Napi::CallbackInfo &info)
 
   LIBMTP_file_t *parent = findFile(__device, targetFolderPath);
 
-  if (!parent)
+  // Make sure we were able to find the parent directory. An empty string target path is acceptable.
+  if (!parent && targetFolderPath != "")
   {
     throw Napi::Error::New(env, "Can not find the target parent folder id.");
   }
@@ -477,7 +478,8 @@ Napi::Boolean upload(const Napi::CallbackInfo &info)
   genfile->filesize = filesize;
   genfile->filename = strdup(filename.c_str());
   genfile->filetype = find_filetype(strdup(filename.c_str()));
-  genfile->parent_id = parent->item_id;
+  // If the user provided path is an empty string then upload to the root of this storage.
+  genfile->parent_id = targetFolderPath == "" ? __storageId : parent->item_id;
   genfile->storage_id = __storageId;
 
   if (LIBMTP_Send_File_From_File(__device, sourceFilePath.c_str(), genfile, progress, &info) != 0)
